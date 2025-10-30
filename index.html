@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English ⇄ বাংলা Dictionary</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📘 English ⇄ বাংলা Dictionary</h1>
+
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Type a word..." oninput="showSuggestions()" />
+      <button onclick="searchWord()">🔍</button>
+      <button id="themeToggle">🌙</button>
+    </div>
+
+    <ul id="suggestions"></ul>
+
+    <div class="result-box" id="resultBox">
+      <p>Type a word to get meaning...</p>
+    </div>
+
+    <button id="speakBtn" style="display:none;">🔊 Pronounce</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
